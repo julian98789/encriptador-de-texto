@@ -1,0 +1,171 @@
+body {
+    background-color: #f6fbff;
+}
+
+.logo {
+    width: 110px;
+    float: left;
+    margin: 10px 0 0 10px;
+}
+
+main {
+    display: flex;
+    margin: 0 auto;
+    max-width: 940px;
+    flex-wrap: wrap; 
+}
+
+.text-area {
+    width: 70%; 
+    height: 400px;
+    background-color: #f6fbff;
+    color: #0A3871;
+    margin-top: 80px;
+    padding: 2px;
+    outline: none;
+    font-size: 17px;
+    border: none;
+    border-radius: 8px;
+    resize: none;
+}
+
+.mensaje {
+    color: #4f5052;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0px 0px auto;
+}
+
+.btn {
+    display: flex;
+    margin-top: 18px;
+    flex-wrap: wrap; 
+}
+
+.btn-desencriptar,
+.btn-encriptar {
+    width: 42%;
+    font-size: 18px;
+    cursor: pointer;
+    height: 67px;
+    margin: 0 2% 20px 0;
+    border: 1px solid #0A3871;
+    border-radius: 23px;
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+
+.btn-encriptar {
+    background-color: #0A3871;
+    color: white;
+}
+
+.mensaje-encriptado {
+    width: 32%;
+    height: 260%; 
+    background: white url("img/Muñeco.png") center top 25% no-repeat;
+    background-size: 65%;
+    border: none;
+    border-radius: 8px;
+    color: #0A3871;
+    margin-top: 20px;
+    margin-left: 5%;
+    outline: none;
+    font-size: 17px;
+    padding-top: 2em;
+    position: relative;
+    resize: none;
+}
+
+.mensaje-encriptado::placeholder {
+    text-align: center;
+    color: #0A3871;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 60%; 
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+
+
+.btn-copia {
+    width: 42%;
+    font-size: 18px;
+    cursor: pointer;
+    height: 67px;
+    margin: -10% 2% 20px 0;
+    margin-left: 70%;
+    border: 1px solid #0A3871;
+    border-radius: 23px;
+    background-color: #ffffff;
+    color: #0A3871;
+    z-index: 1;
+}
+
+.pie-pagina {
+    margin: 10px 0;
+    padding: 10px 0;
+    font-size: 12px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pgn {
+    width: 25px;
+    margin: 5px 0px;
+    padding: 5px 5px;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .logo {
+        float: none;
+        margin-left: -8%;
+    }
+    .text-area {
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .btn-desencriptar,
+    .btn-encriptar,
+    .mensaje-encriptado {
+        width: 100%;
+        margin: 10px 0 20px 0;
+    }
+
+    .btn-desencriptar,
+    .btn-encriptar {
+        margin-right: 0;
+    }
+
+    .mensaje-encriptado {
+        margin-left: 0;
+    }
+
+    .btn-copia {
+        width: 14em;/* Ajuste para hacer los botones un poco más largos */
+        font-size: 15px;
+        cursor: pointer;
+        height: 67px;
+        margin: 0 2% 20px 0;
+        border: 1px solid #0A3871;
+        border-radius: 23px;
+        background-color: #ffffff;
+        color: #0A3871;
+        margin-top: -30%;
+        margin-left: 20%;
+        z-index: 1;
+    }
+}
+
+
+
+

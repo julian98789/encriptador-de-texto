@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador</title>
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="img/mi_logo.png" alt="Logo de aulura">
+        </header>
+
+        <main>
+            <section>
+                <textarea class="text-area" placeholder="Ingrese el texto aquí" cols="60" rows="10"></textarea>
+                <div>
+                    <h6 class="mensaje">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/>
+                        </svg>
+                        Solo letras minúsculas sin acento
+                    </h6>
+                </div>
+                <div class="btn">
+                    <button class="btn-encriptar" onclick="encriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>    
+            </section>         
+            <textarea class="mensaje-encriptado" cols="20" rows="27" placeholder="Ningún mensaje fue encontrado" readonly></textarea> 
+            <button class="btn-copia" style="display: none;" onclick="copiar();">Copiar</button>
+            
+            
+        </main>
+        <footer class="pie-pagina">
+            <p>© 2024 Todos los derechos reservados por Julian Esteban Gomez Agilar </p>
+            <!--Siguientes hipervinculos a paginas externas-->
+            <a href="https://github.com/julianGomez06" target="_blank" rel="noopener noreferrer"><img src="./img/github.png" class="pgn" alt="icono GitHub"></a>
+            <a href="https://www.linkedin.com/in/julian-esteban-gomez-aguilar-35bba72a9/" target="_blank" rel="noopener noreferrer"><img src="./img/linkedin .png" class="pgn" alt="icono GitHub"></a>
+        </footer>
+
+        <script src="app.js"></script>
+    </body>
+</html>
